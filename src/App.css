@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-body {
-  background: linear-gradient(180deg, #a4c3b2, #cce3de, #eaf4f4);
+body { 
+  background-color: #a4c3b2;
   text-align: center;
   margin-top: 20px;
 }
