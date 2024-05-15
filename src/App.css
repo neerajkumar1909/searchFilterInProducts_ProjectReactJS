@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, #a4c3b2, #cce3de, #eaf4f4);
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* CSS Searchbar */
+
+.search-bar {
+  padding: 10px 15px;
+  font-size: 14px;
+  width: 400px;
+  margin-bottom: 20px;
+  outline: none;
+  border-radius: 10px;
+}
+
+/* CSS Loader */
+.loader {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.loader::after {
+  content: "";
+  display: block;
+  width: 68px;
+  height: 68px;
+  margin: 15px;
+  border-radius: 50%;
+  border: 2px dotted white;
+  border-color: white;
+  animation: loadingKeyFrame 5s linear infinite;
+}
+
+@keyframes loadingKeyFrame {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* CSS Products */
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.product-not-found {
+  color: #fff;
+  font-size: 45px;
+}
+/* CSS Products-items */
+.products-items {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 30px;
+  box-shadow: 5px 5px 5px red;
+  gap: 10px;
+  cursor: pointer;
+}
+.products-items img {
+  width: 170px;
+  height: 200px;
+  aspect-ratio: 7/5;
+  padding: 20px 20px;
+  border-radius: 10px;
+}
