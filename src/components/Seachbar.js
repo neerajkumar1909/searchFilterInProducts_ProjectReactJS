@@ -1,11 +1,9 @@
-import React, { useRef } from 'react'
+import React from 'react'
 
 
 function Seachbar({ searchValue, setSearchValue }) {
-    const inputRef = useRef(null)
-
+   
     const handleSearchChange = (e) => {
-        inputRef.current.focus();
         setSearchValue(e.target.value);
     }
     return (
@@ -16,8 +14,7 @@ function Seachbar({ searchValue, setSearchValue }) {
                 name='search'
                 onChange={handleSearchChange}
                 className='search-bar'
-                ref={inputRef}
-            />
+               />
         </div>
     )
 }
