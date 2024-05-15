@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Products from './components/Products';
 import Seachbar from './components/Seachbar';
@@ -35,7 +35,7 @@ function App() {
 
   }, [])
   
-
+  
   const filteredProducts =
     products && products.length > 0
       ? products.filter(
