@@ -14,6 +14,7 @@ function Seachbar({ searchValue, setSearchValue }) {
                 name='search'
                 onChange={handleSearchChange}
                 className='search-bar'
+               autofocus
                />
         </div>
     )
